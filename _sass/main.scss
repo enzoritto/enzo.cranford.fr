@@ -125,3 +125,28 @@ header {
     }
   }
 }
+
+.language {
+  text-align: center;
+  margin: 2rem 0;
+
+  @include breakpoint(sm) {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  & p,a {
+    display: inline;
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 2rem;
+    color: #000000;
+  }
+
+  & p {
+    border-bottom: .5rem solid #000000;
+  }
+}

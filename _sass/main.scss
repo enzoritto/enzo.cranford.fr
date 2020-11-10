@@ -37,6 +37,16 @@ body {
 
       margin: 3rem 0 7rem 0;
     }
+
+    @include breakpoint(xs) {
+      font-size: 4.8rem;
+      
+      & + .subtitle {
+        font-size: 2.4rem;
+
+        margin: 1rem 0 5rem 0;
+      }
+    }
   }
 }
 
@@ -84,9 +94,21 @@ body {
   }
 }
 
+.hidden-mobile {
+  display: none;
+
+  @include breakpoint(lg) {
+    display: inline;
+  }
+}
+
 #header {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 10rem;
+
+  @include breakpoint(xs) {
+    margin-top: 5rem;
+  }
 }

@@ -18,6 +18,8 @@ html {
 }
 
 body {
+  margin: 0;
+
   background-color: $background-color;
 }
 
@@ -48,6 +50,14 @@ body {
       }
     }
   }
+
+  &.medium {
+    font-size: 4.8rem;
+
+    @include breakpoint(xs) {
+      font-size: 3.6rem;
+    }
+  }
 }
 
 .subtitle {
@@ -61,6 +71,7 @@ body {
   border-radius: 0.2rem;
   border: none;
   display: flex;
+  align-items: center;
 
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -71,17 +82,30 @@ body {
   cursor: pointer;
 
   &.large {
-    padding: 1.5rem 2rem;
+    padding: 1rem 1rem;
 
-    font-size: 1.8rem;
+    font-size: 1.4rem;
+
+    @include breakpoint(sm) {
+      padding: 1.5rem 2rem;
+
+      font-size: 1.8rem;
+    }
 
     &.icon i {
       border-radius: 0 0.2rem 0.2rem 0;
-      margin: -1.5rem -2rem -1.5rem 2rem;
-      padding: 1.5rem 2rem;
+      margin: -1rem -1rem -1rem 1rem;
+      padding: 1rem 1rem;
 
-      font-size: 2.4rem;
+      font-size: 2rem;
       background-color: rgba(black, 0.2);
+
+      @include breakpoint(sm) {
+        margin: -1.5rem -2rem -1.5rem 2rem;
+        padding: 1.5rem 2rem;
+
+        font-size: 2.4rem;
+      }
     }
   }
 
@@ -92,6 +116,32 @@ body {
   &:active {
     background-color: darken($button-background-color, 10%);
   }
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  width: calc(100% + 4rem);
+  margin-left: -2rem;
+
+  overflow: scroll;
+
+  @include breakpoint(md) {
+    overflow: hidden;
+
+    justify-content: center;
+  }
+}
+
+.project {
+  flex-grow: 1;
+  border-radius: 0.5rem;
+  min-width: 19rem;
+  max-width: 29rem;
+  margin: 0 2rem;
+  @include aspect-ratio(38, 49);
+
+  background-color: $primary;
 }
 
 .hidden-mobile {
@@ -110,5 +160,49 @@ body {
 
   @include breakpoint(xs) {
     margin-top: 5rem;
+  }
+}
+
+.svg-separator {
+  position: relative;
+  width: 100%;
+
+  z-index: -1;
+  
+  & svg {
+    width: 100%;
+    fill: $darker;
+  }
+
+  &.top {
+    margin-top: 5rem;
+    margin-bottom: calc(100vw / -10);
+  }
+
+  &.bottom {
+    margin-top: calc(100vw / -10);
+    margin-bottom: 5rem;
+
+    & svg {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+#projects {
+  padding: 2rem;
+
+  background-color: $darker;
+
+  & .title {
+    margin-top: -4rem;
+    margin-bottom: 3rem;
+
+    @include breakpoint(md) {
+      margin-top: -15rem;
+      margin-bottom: 5rem;
+
+      text-align: center;
+    }
   }
 }

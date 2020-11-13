@@ -9,6 +9,7 @@ $background-color: $dark;
 
 $title-color: $light;
 $subtitle-color: $primary;
+$text-color: $light-accent;
 
 $button-background-color: $primary;
 $button-text-color: $background-color;
@@ -26,7 +27,7 @@ body {
 .title {
   margin-bottom: 0;
 
-  font-family: "Cabin", sans-serif;
+  font-family: "Assistant", sans-serif;
   font-weight: 700;
 
   color: $title-color;
@@ -37,7 +38,7 @@ body {
     & + .subtitle {
       font-size: 3.6rem;
 
-      margin: 3rem 0 7rem 0;
+      margin: 1rem 0 7rem 0;
     }
 
     @include breakpoint(xs) {
@@ -46,7 +47,7 @@ body {
       & + .subtitle {
         font-size: 2.4rem;
 
-        margin: 1rem 0 5rem 0;
+        margin: 0.5rem 0 5rem 0;
       }
     }
   }
@@ -58,10 +59,18 @@ body {
       font-size: 3.6rem;
     }
   }
+
+  &.small {
+    font-size: 3.6rem;
+
+    @include breakpoint(xs) {
+      font-size: 2.4rem;
+    }
+  }
 }
 
 .subtitle {
-  font-family: "Cabin", sans-serif;
+  font-family: "Assistant", sans-serif;
   font-weight: 400;
 
   color: $subtitle-color;
@@ -136,12 +145,137 @@ body {
 .project {
   flex-grow: 1;
   border-radius: 0.5rem;
+  margin: 0 1rem;
   min-width: 19rem;
   max-width: 29rem;
-  margin: 0 2rem;
+
+  &:first-child {
+    margin-left: 2rem;
+  }
+
   @include aspect-ratio(38, 49);
 
   background-color: $primary;
+}
+
+.skill-group {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 60rem;
+
+  & p {
+    margin-top: 0.2rem;
+
+    font-family: "Assistant", sans-serif;
+    font-weight: 400;
+    font-size: 2.4rem;
+    color: $text-color;
+  }
+
+  &:first-child .title {
+    margin-top: 0;
+  }
+
+  @include breakpoint(sm) {
+    align-items: center;
+    text-align: center;
+
+    & .title {
+      margin-top: 1rem;
+    }
+
+    & p {
+      margin-top: 1rem;
+    }
+  }
+
+  @include breakpoint(md) {
+    max-width: 82rem;
+  }
+}
+
+.timeline {
+  position: relative;
+  min-width: 35rem;
+
+  @include breakpoint(md) {
+    &:nth-child(2n) {
+      margin-left: 10rem;
+    }
+  }
+
+  & .line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 1.1rem;
+    width: .3rem;
+
+    background-color: $primary;
+  }
+
+  &:nth-child(2n) {
+    & .event:nth-child(3n) {
+      margin-bottom: 0;
+    }
+  }
+
+  & .event {
+    position: relative;
+    margin-bottom: 5rem;
+    padding-left: 5rem;
+    max-width: 30rem;
+
+    @include breakpoint(md) {
+      &:nth-child(3n) {
+        margin-bottom: 0;
+      }
+
+      max-width: 44rem;
+    }
+
+    & .content {
+
+      & .title.small {
+        margin: 1rem 0;
+
+        font-family: "Roboto", sans-serif;
+        font-size: 2.4rem;
+
+        @include breakpoint(md) {
+          font-size: 3.6rem;
+        }
+      }
+
+      & .date, .description {
+        margin: 0;
+
+        font-family: "Roboto", sans-serif;
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: $text-color;
+        
+        @include breakpoint(md) {
+          font-size: 2.4rem;
+        }
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        border-radius: 5rem;
+        height: 2.5rem;
+        width: 2.5rem;
+
+        background-color: $primary;
+        z-index: 1;
+      }
+    }
+  }
 }
 
 .hidden-mobile {
@@ -189,20 +323,73 @@ body {
   }
 }
 
-#projects {
-  padding: 2rem;
+.section {
 
+  & > .title {
+    margin: 0 2rem;
+  }
+
+  & .container {
+    padding: 2rem;
+
+    &.flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      @include breakpoint(md) {
+        flex-direction: row;
+      }
+    }
+
+    &.centered {
+      @include breakpoint(sm) {
+        margin: 0 auto;
+        width: max-content;
+      }
+    }
+  }
+}
+
+.section.transition {
+  text-align: center;
   background-color: $darker;
 
-  & .title {
+  & .title.medium {
     margin-top: -4rem;
     margin-bottom: 3rem;
 
     @include breakpoint(md) {
       margin-top: -15rem;
       margin-bottom: 5rem;
+    }
+  }
+}
 
-      text-align: center;
+.section.normal {
+  margin-bottom: 10rem;
+
+  & .title.medium {
+    margin-bottom: 7rem;
+
+    text-align: center;
+
+    @include breakpoint(sm) {
+      margin-bottom: 10rem;
+    }
+  }
+}
+
+#projects {
+  @include breakpoint(xs) {
+    & .title {
+      margin-bottom: 0;
+      text-align: left;
+    }
+
+    & .projects {
+      margin-bottom: 3rem;
     }
   }
 }

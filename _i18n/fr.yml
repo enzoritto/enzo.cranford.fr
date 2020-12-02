@@ -19,11 +19,11 @@ experience:
       -
         date: "2019 & 2017"
         title: "Conférence Newcrafts"
-        desc: "Une conférence annuelle des créateurs de logiciels où j'ai découvert une variété de sujets allant de la programmation extrême à la santé mentale en milieu de travail."
+        desc: "Une conférence annuelle de créateurs de logiciels où j'ai découvert une variété de sujets allant de la programmation extrême à la santé mentale en milieu de travail."
       -
         date: "2019"
         title: "AgileOpen France Été"
-        desc: "Un week-end forum ouvert sur l'agilité et s'amuser."
+        desc: "Un week-end forum ouvert sur l'agilité."
     - events:
       -
         date: "2016"
@@ -40,10 +40,10 @@ experience:
 skills:
   title: "Mes compétences"
   web-dev-title: "Développement et conception Web"
-  programming: "Principes de programmation  "
+  programming: "Principes de programmation"
   game-dev-title: "Conception et développement de jeux vidéo"
   music-title: "Musique Assistée par Ordinateur"
   language-title: "Langues"
   english: "Anglais"
   french: "Français"
-  language-strength: "Courrant"
+  language-strength: "Bilingue"

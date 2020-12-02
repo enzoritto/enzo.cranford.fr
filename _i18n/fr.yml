@@ -1,0 +1,49 @@
+header:
+  title: "Bonjour, je m'appelle "
+  subtitle-hidden: "Je suis un "
+  subtitle: "développeur web & jeux vidéo"
+  button-label: "Mes Compétences"
+projects:
+  title: "Mes projets"
+  swave-desc: "Application Web de création musicale réalisée avec tone.js."
+  fesi-desc: "Jeu de tir 2D sans fin. Ma soumission au 8ème Godot Wild Jam."
+  pu-desc: "Jeu 2D. Ma soumission au 38ème Ludum Dare Jam."
+experience:
+  title: "Mes expériences"
+  timelines:
+    - events:
+      -
+        date: "2019 - 6 Mois"
+        title: "Contrat professionnel à /ut7"
+        desc: "C'était ma première expérience professionnelle et où j'ai appris à faire du TDD, de l'OOP et les valeurs et principes agiles."
+      -
+        date: "2019 & 2017"
+        title: "Conférence Newcrafts"
+        desc: "Une conférence annuelle des créateurs de logiciels où j'ai découvert une variété de sujets allant de la programmation extrême à la santé mentale en milieu de travail."
+      -
+        date: "2019"
+        title: "AgileOpen France Été"
+        desc: "Un week-end forum ouvert sur l'agilité et s'amuser."
+    - events:
+      -
+        date: "2016"
+        title: "Agile Tour Bordeaux"
+        desc: "Une conférence annuelle sur les valeurs, principes et pratiques agiles."
+      -
+        date: "2014 - 1 semaine"
+        title: "Stage à Previmeteo"
+        desc: "Mon stage de 3ème où j'ai eu un premier aperçu du travail dans le développement de logiciels."
+      -
+        date: "2013 - 2017"
+        title: "Geek camp"
+        desc: "Un week-end annuel open space, où nous planifions, faisons des activités et campons à la campagne."
+skills:
+  title: "Mes compétences"
+  web-dev-title: "Développement et conception Web"
+  programming: "Principes de programmation  "
+  game-dev-title: "Conception et développement de jeux vidéo"
+  music-title: "Musique Assistée par Ordinateur"
+  language-title: "Langues"
+  english: "Anglais"
+  french: "Français"
+  language-strength: "Courrant"

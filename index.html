@@ -2,13 +2,26 @@
 layout: default
 title: Enzo Cranford
 ---
+
+<div class="language-switch">
+  {% if site.lang == "fr" %}
+    {% capture link1 %}{{ site.baseurl_root }}{{ page.url}}{% endcapture %}
+    <a href="{{ link1 }}">EN</a>
+    <a href="" class="active">FR</a>
+  {% elsif site.lang == "en" %}
+    {% capture link2 %}{{ site.baseurl_root }}/fr{{ page.url}}{% endcapture %}
+    <a href="" class="active">EN</a>
+    <a href="{{ link2 }}">FR</a>
+  {% endif %}
+</div>
+
 <header id="header">
-  <h1 class="title large"><span class="hidden-mobile">Hello, my name is </span>Enzo Cranford</h1>
-  <h2 class="subtitle"><span class="hidden-mobile">I am a </span>Web Developer & Game Creator</h2>
-  <button class="button large icon">
-    Download my cv
-    <i class="fas fa-file-download"></i>
-  </button>
+  <h1 class="title large"><span class="hidden-mobile">{% t header.title %} </span>Enzo Cranford</h1>
+  <h2 class="subtitle"><span class="hidden-mobile">{% t header.subtitle-hidden %}</span>{% t header.subtitle %}</h2>
+  <a href="#skills" class="button large icon">
+    {% t header.button-label %}
+    <i class="fas fa-bars"></i>
+  </a>
 </header>
 
 <div class="svg-separator top">
@@ -18,12 +31,27 @@ title: Enzo Cranford
 </div>
 
 <section class="section transition" id="projects">
-  <h1 class="title medium">My Projects</h1>
+  <h1 class="title medium">{% t projects.title %}</h1>
   <div class="container">
     <div class="projects">
-      <a href="#" class="project"></a>
-      <a href="#" class="project"></a>
-      <a href="#" class="project"></a>
+      <a href="https://swave-5pqx6qme7.now.sh/" target="_blank" class="project" id="swave">
+        <div class="content">
+          <h2 class="title small">Swave</h2>
+          <p class="desc">{% t projects.swave-desc %}</p>
+        </div>
+      </a>
+      <a href="https://zoford.itch.io/fesi" target="_blank" class="project" id="fesi">
+        <div class="content">
+          <h2 class="title small">FESI</h2>
+          <p class="desc">{% t projects.fesi-desc %}</p>
+        </div>
+      </a>
+      <a href="https://gamejolt.com/games/the-positive-user/273322" target="_blank" class="project" id="positive-user">
+        <div class="content">
+          <h2 class="title small">The Positive User</h2>
+          <p class="desc">{% t projects.pu-desc %}</p>
+        </div>
+      </a>
     </div>
   </div>
 </section>
@@ -35,54 +63,30 @@ title: Enzo Cranford
 </div>
 
 <section class="section normal" id="experience">
-  <h1 class="title medium">My Experience</h1>
+  <h1 class="title medium">{% t experience.title %}</h1>
   <div class="container flex">
     <div class="timeline">
-      <div class="event">
-        <div class="content">
-          <p class="date">2019 - 6 Months</p>
-          <h3 class="title small">Apprenticeship at /ut7</h3>
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      {% for event in site.translations[site.lang].experience.timelines[0].events %}
+        <div class="event">
+          <div class="content">
+            <p class="date">{{ event["date"] }}</p>
+            <h3 class="title small">{{ event["title"] }}</h3>
+            <p class="description">{{ event["desc"] }}</p>
+          </div>
         </div>
-      </div>
-      <div class="event">
-        <div class="content">
-          <p class="date">2019 & 2017</p>
-          <h3 class="title small">Newcrafts Conference</h3>
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-      </div>
-      <div class="event">
-        <div class="content">
-          <p class="date">2019</p>
-          <h3 class="title small">AgileOpen France Summer</h3>
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-      </div>
+      {% endfor %}
       <span class="line"></span>
     </div>
     <div class="timeline">
-      <div class="event">
-        <div class="content">
-          <p class="date">2016</p>
-          <h3 class="title small">Agile Tour Bordeaux</h3>
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      {% for event in site.translations[site.lang].experience.timelines[1].events %}
+        <div class="event">
+          <div class="content">
+            <p class="date">{{ event["date"] }}</p>
+            <h3 class="title small">{{ event["title"] }}</h3>
+            <p class="description">{{ event["desc"] }}</p>
+          </div>
         </div>
-      </div>
-      <div class="event">
-        <div class="content">
-          <p class="date">2014 - 1 Week</p>
-          <h3 class="title small">Internship at Previmeteo</h3>
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-      </div>
-      <div class="event">
-        <div class="content">
-          <p class="date">2013 - 2017</p>
-          <h3 class="title small">Geekcamp</h3>
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-      </div>
+      {% endfor %}
       <span class="line"></span>
     </div>
   </div>
@@ -95,23 +99,27 @@ title: Enzo Cranford
 </div>
 
 <section class="section transition" id="skills">
-  <h1 class="title medium">My Skills</h1>
+  <h1 class="title medium">{% t skills.title %}</h1>
   <div class="container centered">
     <div class="skill-group">
-      <h1 class="title small">Web Design & Development</h1>
-      <p>HTML \ CSS \ Sass \ JavaScript \ Node.js \ Express.js \ Tone.js \ MongoDB \ Stripe \ Webpack \ Jekyll \ Wordpress \ Forestry.io \ Vue \ Nuxt \ Bulma \ Bootstrap \ Figma</p>
+      <h1 class="title small">{% t skills.web-dev-title %}</h1>
+      <p>HTML \ CSS \ Sass \ JavaScript \ Python \ Node.js \ Express.js \ Tone.js \ MongoDB \ Stripe \ Webpack \ Jekyll \ Wordpress \ Forestry.io \ Vue \ Nuxt \ Bulma \ Bootstrap \ Figma</p>
     </div>
     <div class="skill-group">
-      <h1 class="title small">Game Design & Development</h1>
+      <h1 class="title small">{% t skills.programming %}</h1>
+      <p>Test Driven Development \ Object Oriented Programming</p>
+    </div>
+    <div class="skill-group">
+      <h1 class="title small">{% t skills.game-dev-title %}</h1>
       <p>Godot \ GDScript \ Unity \ C# \ Blender</p>
     </div>
     <div class="skill-group">
-      <h1 class="title small">Music Production</h1>
+      <h1 class="title small">{% t skills.music-title %}</h1>
       <p>Ableton Live \ Bitwig Studio</p>
     </div>
     <div class="skill-group">
-      <h1 class="title small">Language</h1>
-      <p>English - <strong>Fluent</strong> \ French - <strong>Fluent</strong></p>
+      <h1 class="title small">{% t skills.language-title %}</h1>
+      <p>{% t skills.english %} - <strong>{% t skills.language-strength %}</strong> \ {% t skills.french %} - <strong>{% t skills.language-strength %}</strong></p>
     </div>
   </div>
 </section>
@@ -133,8 +141,8 @@ title: Enzo Cranford
       <p>+33 7 55 63 48 58</p>
     </div>
     <div class="icon-group">
-      <i class="fab fa-github"></i>
-      <i class="fab fa-linkedin"></i>
+      <a href="https://github.com/zoford/" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/enzo-cranford-82b592198/" target="_blank"><i class="fab fa-linkedin"></i></a>
     </div>
   </div>
 </section>

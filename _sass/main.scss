@@ -38,7 +38,7 @@ body {
     & + .subtitle {
       font-size: 3.6rem;
 
-      margin: 1rem 0 7rem 0;
+      margin: 1rem 0 1rem 0;
     }
 
     @include breakpoint(xs) {
@@ -47,7 +47,7 @@ body {
       & + .subtitle {
         font-size: 2.4rem;
 
-        margin: 0.5rem 0 5rem 0;
+        margin: 0.5rem 0 0 0;
       }
     }
   }
@@ -203,7 +203,7 @@ body {
 .icon-group {
   display: flex;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
 
   & a {
     margin-right: 5rem;
@@ -235,7 +235,7 @@ body {
   }
 
   & p {
-    margin: 1rem 0 1rem 0;
+    margin: 1rem 0 0.2rem 0;
 
     color: $text-color;
   }
@@ -430,6 +430,14 @@ body {
     &.centered {
       justify-content: center;
     }
+  }
+
+  &.text-small p, .text-small i {
+    font-size: 1.8rem !important;
+  }
+
+  &.margin-bottom {
+    margin-bottom: 2rem !important;
   }
 
   &.centered {

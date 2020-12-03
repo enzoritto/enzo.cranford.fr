@@ -32,10 +32,17 @@ title: Enzo Cranford
       <a href="https://www.linkedin.com/in/enzo-cranford-82b592198/" target="_blank"><i class="fab fa-linkedin"></i></a>
     </div>
   </div>
-  <a href="#skills" class="button large icon">
-    {% t header.button-label %}
-    <i class="fas fa-bars"></i>
-  </a>
+  {% if site.lang == "fr" %}
+    <a href="{{ site.url }}/download/EnzoCranford-CV-fr.pdf" class="button large icon">
+      {% t header.resume-button-label %}
+      <i class="fas fa-file-download"></i>
+    </a>
+  {% elsif site.lang == "en" %}
+    <a href="{{ site.url }}/download/EnzoCranford-CV-en.pdf" class="button large icon">
+      {% t header.resume-button-label %}
+      <i class="fas fa-file-download"></i>
+    </a>
+  {% endif %}
 </header>
 
 <div class="svg-separator top">

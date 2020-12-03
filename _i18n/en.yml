@@ -2,7 +2,8 @@ header:
   title: Hello, my name is
   subtitle-hidden: "I am a "
   subtitle: "Web Developer & Game Creator"
-  button-label: "My skills"
+  skill-button-label: "My skills"
+  resume-button-label: "Download my CV"
 projects:
   title: "My Projects"
   swave-desc: "Music creation web-app made with tone.js."

@@ -14,6 +14,10 @@ experience:
   timelines:
     - events:
       -
+        date: "2021 - 1 An 6 Mois"
+        title: "Sinch - Software Engineer"
+        desc: "C'est là que j'ai découvert l'Holacracy, beaucoup amélioré de nombreuses compétences, et appris de nouvelles choses comme React, MFE et plus."
+      -
         date: "2019 - 6 Mois"
         title: "Contrat professionnel à /ut7"
         desc: "C'était ma première expérience professionnelle et où j'ai appris à faire du TDD, de l'OOP et les valeurs et principes agiles."
@@ -21,19 +25,15 @@ experience:
         date: "2019 & 2017"
         title: "Conférence Newcrafts"
         desc: "Une conférence annuelle de créateurs de logiciels où j'ai découvert une variété de sujets allant de la programmation extrême à la santé mentale en milieu de travail."
+    - events:
       -
         date: "2019"
         title: "AgileOpen France Été"
         desc: "Un week-end forum ouvert sur l'agilité."
-    - events:
       -
         date: "2016"
         title: "Agile Tour Bordeaux"
         desc: "Une conférence annuelle sur les valeurs, principes et pratiques agiles."
-      -
-        date: "2014 - 1 semaine"
-        title: "Stage à Previmeteo"
-        desc: "Mon stage de 3ème où j'ai eu un premier aperçu du travail dans le développement de logiciels."
       -
         date: "2013 - 2017"
         title: "Geek camp"

@@ -1,7 +1,7 @@
 header:
   title: Hello, my name is
   subtitle-hidden: "I am a "
-  subtitle: "Web Developer & Game Creator"
+  subtitle: "Software Developer"
   skill-button-label: "My skills"
   resume-button-label: "Download my CV"
 projects:
@@ -14,6 +14,10 @@ experience:
   timelines:
     - events:
       -
+        date: "2021 - 1 Year 6 Months"
+        title: "Sinch - Software Engineer"
+        desc: "This is where I learned about Holacracy, greatly improved many skills and learned new ones like React, MFEs & more."
+      -
         date: "2019 - 6 Months"
         title: "Apprenticeship at /ut7"
         desc: "This was my first job experience and where I learned how to use TDD, OOP and agile values and principles."
@@ -21,19 +25,15 @@ experience:
         date: "2019 & 2017"
         title: "Newcrafts Conference"
         desc: "An annual software crafters conference where I learned about a variety of topics from Extreme Programming to mental health in the workplace."
+    - events:
       -
         date: "2019"
         title: "AgileOpen France Summer"
         desc: "An open forum weekend all about agility and having fun."
-    - events:
       -
         date: "2016"
         title: "Agile Tour Bordeaux"
         desc: "An annual conference about agile values, principles, and practices."
-      -
-        date: "2014"
-        title: "Internship at Previmeteo"
-        desc: "My Week-Long high school internship where I got a first glimpse at what it's like to work in software development."
       -
         date: "2013 - 2017"
         title: "Geek camp"

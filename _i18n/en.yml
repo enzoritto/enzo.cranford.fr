@@ -6,6 +6,7 @@ header:
   resume-button-label: "Download my CV"
 projects:
   title: "My Projects"
+  handyroach-desc: "2D Puzzle game. My submission to the 53rd Godot Wild Jam."
   swave-desc: "Music creation web-app made with tone.js."
   fesi-desc: "2D Endless space shooter. My submission to the 8th Godot Wild Jam."
   pu-desc: "2D Casual Game. My submission to the 38th Ludum Dare Jam."

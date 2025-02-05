@@ -1,10 +1,9 @@
 +++
-title = "Project 3"
-description = "Example description"
+title = "FESI"
+description = "2D Endless space shooter made with Godot for Godot Wild Jam #8."
 weight = 1
 
 [extra]
-remote_image = "https://images.unsplash.com/photo-1462556791646-c201b8241a94?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1465&q=80"
+remote_image = "https://img.itch.zone/aW1nLzIwMzI1OTMucG5n/original/NOhg3d.png"
+link_to = "https://sasquirrel.itch.io/fesi"
 +++
-
-Example project page

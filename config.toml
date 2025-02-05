@@ -19,7 +19,6 @@ highlight_code = true
 [extra]
 theme = "toggle"
 menu = [
-    { name = "/home", url = "/", weight = 1 },
     { name = "/projects", url = "/projects", weight = 2 },
     { name = "/about", url = "/about", weight = 3 },
 ]

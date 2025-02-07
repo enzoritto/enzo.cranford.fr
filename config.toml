@@ -1,0 +1,32 @@
+title = "Enzo's zenzone"
+theme = "apollo"
+taxonomies = [{ name = "tags" }]
+
+# The URL the site will be built for
+base_url = "https://enzo.cranford.fr"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+
+[extra]
+theme = "toggle"
+favicon = "/favicon.png"
+menu = [
+    { name = { "en" = "/projects", "fr" = "/projets" }, url = "/projects", weight = 2 },
+    { name = { "en" = "/about", "fr" = "/à-propos" }, url = "/about", weight = 3 },
+]
+socials = [
+    { name = "mastodon", url = "https://mastodon.social/@enzoritto", icon = "mastodon" },
+    { name = "github", url = "https://github.com/enzoritto/", icon = "github" },
+]
+
+[languages.fr]
+title = "La zenzone d'Enzo"

@@ -19,10 +19,13 @@ highlight_code = true
 [extra]
 theme = "toggle"
 menu = [
-    { name = "/projects", url = "/projects", weight = 2 },
-    { name = "/about", url = "/about", weight = 3 },
+    { name = { "en" = "/projects", "fr" = "/projets" }, url = "/projects", weight = 2 },
+    { name = { "en" = "/about", "fr" = "/à-propos" }, url = "/about", weight = 3 },
 ]
 socials = [
     { name = "mastodon", url = "https://mastodon.social/@enzoritto", icon = "mastodon" },
     { name = "github", url = "https://github.com/enzoritto/", icon = "github" },
 ]
+
+[languages.fr]
+title = "La zenzone d'Enzo"

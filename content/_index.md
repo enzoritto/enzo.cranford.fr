@@ -1,5 +1,5 @@
 +++
-title= "Hello, World! I'm Enzo"
+title = "Hello, World! I'm Enzo"
 template = "homepage.html"
 +++
 

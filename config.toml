@@ -18,6 +18,7 @@ highlight_code = true
 
 [extra]
 theme = "toggle"
+favicon = "/favicon.png"
 menu = [
     { name = { "en" = "/projects", "fr" = "/projets" }, url = "/projects", weight = 2 },
     { name = { "en" = "/about", "fr" = "/à-propos" }, url = "/about", weight = 3 },

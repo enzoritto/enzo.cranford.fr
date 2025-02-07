@@ -1,9 +1,9 @@
 +++
-title = "The Positive User"
-description = "2D Casual Game made with Unity for the 38th Ludum Dare Jam."
+title = "FESI"
+description = "2D Endless space shooter made with Godot for Godot Wild Jam #8."
 weight = 1
 
 [extra]
-remote_image = "https://m.gjcdn.net/game-screenshot/2700/975882-dstjwupp-v4.webp"
-link_to = "https://gamejolt.com/games/the-positive-user/273322"
+local_image = "/projects/fesi.gif"
+link_to = "https://sasquirrel.itch.io/fesi"
 +++

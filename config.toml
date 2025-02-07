@@ -26,6 +26,3 @@ socials = [
     { name = "mastodon", url = "https://mastodon.social/@enzoritto", icon = "mastodon" },
     { name = "github", url = "https://github.com/enzoritto/", icon = "github" },
 ]
-
-repo_view = true
-repo_url = "https://github.com/enzoritto/enzo.cranford.fr"

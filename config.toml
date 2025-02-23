@@ -1,5 +1,4 @@
 title = "Enzo's zenzone"
-theme = "apollo"
 taxonomies = [{ name = "tags" }]
 
 # The URL the site will be built for
@@ -26,6 +25,7 @@ menu = [
 socials = [
     { name = "mastodon", url = "https://mastodon.social/@enzoritto", icon = "mastodon" },
     { name = "github", url = "https://github.com/enzoritto/", icon = "github" },
+    { name = "itchio", url = "https://sasquirrel.itch.io", icon = "itchio" },
 ]
 
 [languages.fr]

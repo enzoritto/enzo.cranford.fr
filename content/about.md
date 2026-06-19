@@ -4,20 +4,29 @@ title = "About"
 
 # My Journey
 
+## Bachlor's Degree in Physics at the _[University of Bordeaux](https://www.u-bordeaux.fr/)_
+> _2025 - Present_
+
+* Currently studying fundamental physics, advanced mathematics, electrokinetics and chemistry.
+
+## Diploma for Access to University Studies from the _[University of Bordeaux](https://www.u-bordeaux.fr/)_
+> _2024 - 2025_
+
+* Mathematics and science certification obtained for entry into a Bachelor's program in Physics.
+
 ## Software Engineer at _[Sinch](https://sinch.com)_
-Here, I gained my expertise in React by utilizing it to develop Micro Frontends.
-
-I established continuous integration and continuous deployment (CI/CD) pipelines using GitLab.
-
-Additionally, I wrote Python scripts and enhanced as well as maintained internal tools.
-
-I also took an active role in team rituals, including daily stand-ups, sprint planning sessions, tactical meetings, and retrospectives.
 >_2021 - 1 Year 6 Months_
 
+* Used **React** to develop **Micro Frontends**, and implement global design system **Web Components**.
+* Built and optimized automated **CI/CD pipelines** using **GitLab**.
+* Engineered and maintained **Python** scripts for internal tooling, modernized user interfacing for increasing user experience and performance.
+* Actively participated in **Agile** rituals such as daily stand-ups, sprint planning, and retrospectives, as well as taking an active role in **Holacratic governance** of development teams.
+
 ## Apprenticeship at _[/ut7](https://ut7.fr)_
-This is where I had my first professional experience and learned about agile values and principles, as well as how to do TDD and OOP.
-I was also introduced to the concept of open forums, where I developed an interest in new technologies like VueJS.
 >_2019 - 6 Months_
+
+* Gained foundational professional experience applying Agile values, Test-Driven Development (TDD), and Object-Oriented Programming (OOP).
+* Participated in open forums, proactively researching and experimenting with emerging frameworks like VueJS.
 
 ---
 
@@ -30,6 +39,9 @@ HTML \ CSS \ Sass \ Node.js \ Deno \ Express.js \ Tone.js \ MongoDB \ Stripe \ W
 
 ## Programming Principles
 Test Driven Development \ Object Oriented Programming \ Factory Pattern \ Adapter Pattern
+
+## Sciences
+Typst \ LaTex \ JupyterLab \ Numpy \ Pandas \ Matplotlib \ Zotero
 
 ## Game Design & Development
 Godot \ Unity \ Blender

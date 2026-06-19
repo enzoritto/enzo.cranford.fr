@@ -4,23 +4,29 @@ title = "À propos"
 
 # Mon Parcours
 
-## Software Enginee chez _[Sinch](https://sinch.com)_
-Ici, j'ai acquis mon expertise en React en l'utilisant pour développer des Micro Frontends.
+## Licence de Physique à l'_[Université de Bordeaux](https://www.u-bordeaux.fr/)_
+> _2025 - En cours_
 
-J'ai aussi mis en place des pipelines d'intégration et de déploiement continus (CI/CD) en utilisant GitLab.
+* J'étudie actuellement la physique fondamentale, les mathématiques avancées, l'électrocinétique et la chimie.
 
-De plus, j'ai écrit des scripts Python et amélioré ainsi que maintenu des outils internes.
+## Diplôme d'Accès aux Études Universitaires à l'_[Université de Bordeaux](https://www.u-bordeaux.fr/)_
+> _Année universitaire 2024-2025_
 
-J'ai également joué un rôle actif dans les rituels d'équipe, y compris les réunions quotidiennes, les sessions de planification de sprint, les réunions tactiques et les rétrospectives.
->_2021 - 1 An 6 Mois_
+* Certification en mathématiques et sciences obtenue pour l'entrée en Licence de Physique.
+
+## Software Engineer chez _[Sinch](https://sinch.com)_
+>_2021 - 1 an et 6 mois_
+
+* Utilisation de **React** pour développer des **Micro Frontends** et intégrer les **Web Components** du design system global.
+* Conception et optimisation de pipelines **CI/CD** automatisés via **GitLab**.
+* Développement et maintenance de scripts **Python** pour l'outillage interne, et modernisation des interfaces utilisateur pour améliorer l'expérience globale et les performances.
+* Participation active aux rituels **Agiles** (daily stand-ups, sprint planning, rétrospectives) et implication dans la **gouvernance holacratique** des équipes de développement.
 
 ## Dévelopeur Web chez _[/ut7](https://ut7.fr)_
-C'est là que j'ai eu ma première expérience professionnelle et que j'ai appris les valeurs et principes agiles
-et comment faire du TDD & OOP.
+>_2019 - 6 mois_
 
-J'ai aussi été initié au concept des forums ouverts, où j'ai
-développé un intérêt pour les nouvelles technologies comme VueJS.
->_2019 - 6 Mois_
+* Acquisition d'une première expérience professionnelle en appliquant les valeurs Agiles, le **Test-Driven Development (TDD)** et la **Programmation Orientée Objet (POO)**.
+* Participation à des forums ouverts, avec une recherche proactive et de l'expérimentation sur des frameworks émergents comme **VueJS**.
 
 ---
 
@@ -33,6 +39,9 @@ HTML \ CSS \ Sass \ Node.js \ Deno \ Express.js \ Tone.js \ MongoDB \ Stripe \ W
 
 ## Principes de programmation
 Test Driven Development \ Object Oriented Programming \ Factory Pattern \ Adapter Pattern
+
+## Sciences
+Typst \ LaTex \ JupyterLab \ Numpy \ Pandas \ Matplotlib \ Zotero
 
 ## Conception et développement de jeux vidéo
 Godot \ Unity \ Blender

@@ -20,6 +20,7 @@ menu = [
 socials = [
     { name = "github", url = "https://github.com/enzoritto/", icon = "github" },
     { name = "itchio", url = "https://sasquirrel.itch.io", icon = "itchio" },
+    { name = "mail", url = "mailto:enzo+conctact@cranford.fr", icon = "mail"}
 ]
 
 [languages.fr]
